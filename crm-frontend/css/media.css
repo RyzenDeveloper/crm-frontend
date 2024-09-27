@@ -1,0 +1,77 @@
+/* Phones (portrait and landscape) */
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 0 5px;
+  }
+
+  .header .search-form .search-form__input {
+    width: 100%;
+  }
+
+  .clientele__title {
+    font-size: 18px;
+  }
+
+  .add-client__btn {
+    width: 100%;
+    font-size: 12px;
+    padding: 10px 0;
+  }
+
+  .table {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .table .table-head__cells,
+  .data-table .table__row .row__cells {
+    font-size: 12px;
+    padding: 10px 5px;
+  }
+
+  .table-head_updatedate, .table-head_createdate,
+  .data-table .row__cells:nth-child(3), .data-table .row__cells:nth-child(4) {
+    display: none;
+  }
+
+  .actions-btn__icon,
+  .delete-btn__icon {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+/* Tablets (portrait and landscape) */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .header .search-form .search-form__input {
+    width: 80%;
+  }
+
+  .clientele__title {
+    font-size: 20px;
+  }
+
+  .add-client__btn {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .table {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .table .table-head__cells,
+  .data-table .table__row .row__cells {
+    font-size: 14px;
+    padding: 15px 10px;
+  }
+
+  .table-head_updatedate, .data-table .row__cells:nth-child(4) {
+    display: none;
+  }
+}
