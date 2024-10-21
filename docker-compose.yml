@@ -1,4 +1,4 @@
-name: skb.
+version: '3'
 services:
   backend:
     build: ./crm-backend
