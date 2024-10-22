@@ -1,6 +1,6 @@
 const DELAY_TIME = 300;
 const VISIBLE_CSS = 'visible';
-const URI = 'http://crm-pro.cpl3.dev:3001/api/clients';
+const URI = 'https://crm-pro.cpl3.dev:3000/api/clients';
 
 const clientsState = {
   columnOfSort: 'id',
