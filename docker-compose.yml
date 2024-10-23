@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  backend:
+    build: ./crm-backend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./crm-backend:/usr/src/app
+
+  frontend:
+    build: ./crm-frontend
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./crm-frontend:/usr/src/app
