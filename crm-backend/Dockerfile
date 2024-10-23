@@ -1,20 +1,20 @@
-# Используем Node.js образ
+# Use an official Node runtime as a parent image
 FROM node:14
 
-# Создаем рабочую директорию в контейнере
+# Set the working directory in the container
 WORKDIR /usr/src/app
 
-# Копируем файлы package.json и package-lock.json
+# Copy the current directory contents into the container at /usr/src/app
 COPY package*.json ./
 
-# Устанавливаем зависимости
+# Install any needed packages specified in package.json
 RUN npm install
 
-# Копируем исходный код
+# Bundle app source
 COPY . .
 
-# Открываем порт для API
-EXPOSE 3000
+# Make port 4000 available to the world outside this container
+EXPOSE 4000
 
-# Команда для запуска приложения
-CMD ["npm", "start"]
+# Run the app when the container launches
+CMD ["node", "server.js"]
